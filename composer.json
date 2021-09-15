@@ -1,5 +1,5 @@
 {
-    "name": "summergeorge/ali-oss-storage",
+    "name": "ethanfly/ali-oss-storage",
     "description": "aliyun oss filesystem storage for laravel 5+",
     "keywords": ["aliyun", "oss", "laravel", "filesystems", "storage"],
     "homepage": "https://github.com/summergeorge/Aliyun-oss-storage",
