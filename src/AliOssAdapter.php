@@ -99,7 +99,7 @@ class AliOssAdapter extends AbstractAdapter
         $ssl,
         $isCname = false,
         $debug = false,
-        $cdnDomain,
+        $cdnDomain = '',
         $prefix = null,
         array $options = []
     )
@@ -583,7 +583,7 @@ class AliOssAdapter extends AbstractAdapter
      * @throws FileNotFoundException
      * @throws OssException
      */
-    public function getTemporaryUrl($path, $expire = 600, $options) {
+    public function getTemporaryUrl($path, $expire = 600, $options = []) {
         if (!$this->has($path))
             throw new FileNotFoundException($path.' not found');
         $method = OssClient::OSS_HTTP_GET;
